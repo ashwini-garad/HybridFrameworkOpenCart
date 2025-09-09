@@ -5,9 +5,7 @@
     <classes>
      <!--  <class name="com.OpenCart.Base.BaseClass"/>-->
       
-      <class name="com.OpenCart.TestCases.T2_LoginPageTest"/>
-      <class name="com.OpenCart.TestCases.T3_HomePageTest"/>
-        <class name="com.OpenCart.TestCases.T3_HomePageTest"/>
+       <class name="com.OpenCart.TestCases.T1_AccountRegistrationPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
