@@ -6,6 +6,7 @@
      <!--  <class name="com.OpenCart.Base.BaseClass"/>-->
       
        <class name="com.OpenCart.TestCases.T1_AccountRegistrationPageTest"/>
+        <class name="com.OpenCart.TestCases.T2_LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

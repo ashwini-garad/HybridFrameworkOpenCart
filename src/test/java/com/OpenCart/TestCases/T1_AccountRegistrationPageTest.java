@@ -161,7 +161,43 @@ String password=ar.setPassword(randomeAlphaNumberic());
          System.out.println("validate email test case passed...!");
 		}
 		
+		@Test
+		public void validateWithInvalidphone()
+		{
+			driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");
+		//ar.setEmail();
+       ar.clickContinue();
+      String act_phone=ar.validatephoneno();
+         String exp_phone="Telephone must be between 3 and 32 characters!";
+         Assert.assertEquals(act_phone,exp_phone, "Invalid email id enter");
+         System.out.println("validate phone number test case passed...!");
+		}
 		
-	 }
+	 
+@Test
+
+public  void validatebothpassword()
+{
+	driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");
+	ar.setPassword("ashu");
+	ar.setConfirmPassword("ghf");
+	ar.clickContinue();
+	
+	   
+	
+
+	    String errorMsg = ar.getPasswordMismatchError();
+
+	    Assert.assertTrue(errorMsg.contains("Password confirmation does not match")
+	                      || errorMsg.contains("Password confirmation does not match password"),
+	                      "Mismatch error not displayed correctly.");
+	    Assert.assertFalse(driver.getCurrentUrl().contains("success"), 
+	                      "User should not be registered with mismatched passwords.");
+	    System.out.println("passward and confirme passward are same");
+	}
+	
+	
+
+}
 	
 

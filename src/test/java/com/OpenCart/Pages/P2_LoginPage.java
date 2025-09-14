@@ -1,5 +1,6 @@
 package com.OpenCart.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,13 @@ public class P2_LoginPage {
 
 	@FindBy(xpath = "//input[@value='Login']")
 	WebElement loginBtn;
+	@FindBy(xpath="//div[text()='Warning: No match for E-Mail Address and/or Password.']") WebElement invalidemail;
+	@FindBy(xpath="//div[@class='well']//a[text()='Forgotten Password']") WebElement ForgottenPasswordLnk;
+	@FindBy(id="input-email")WebElement emailFieldPlaceholder ;
+	@FindBy(id="input-password")WebElement passwordFieldPlaceholder ;
+	
+	@FindBy(id="input-password")WebElement passwordField ;
+
 
 
 	public P2_LoginPage setEmail(String email) {
@@ -77,7 +85,31 @@ public P3_HomePage doLogin(String un,String psw)
 		loginBtn.click();
 		return new P3_HomePage(driver);
 	}
+public String invalidemail()
+{
 
 	
+//	invalidemail.click();
+	return invalidemail.getText() ;
+}
+public void validateForgottenPasswodlnk()
+{
+	ForgottenPasswordLnk.click();
+}
+public String validateemailFieldPlaceholder()
+{
+	return emailFieldPlaceholder.getAttribute("placeholder");
+}
+
+public String validatepasswordFieldPlaceholder()
+{
+	return passwordFieldPlaceholder.getAttribute("placeholder");
+}
+
+public String validatePaaswordVisibility()
+{
+	return passwordField.getAttribute("type");
+}
+
 
 }

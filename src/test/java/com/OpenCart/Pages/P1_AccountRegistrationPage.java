@@ -58,6 +58,8 @@ public class P1_AccountRegistrationPage
      @FindBy(xpath="//div[@class='list-group']//a[text()='Newsletter']")WebElement newselter;
      
      @FindBy(xpath="//div[text()='E-Mail Address does not appear to be valid!']")WebElement emailValidation;
+     @FindBy(xpath="//div[text()='Telephone must be between 3 and 32 characters!']")WebElement phonevalidation;
+     @FindBy(xpath="//div[text()='Password confirmation does not match password!']")WebElement warningMessage;
      
      
 	public void setFirstName(String fname) {
@@ -131,10 +133,18 @@ public class P1_AccountRegistrationPage
 	 
 	 return  emailValidation.getText() ;
   }
+  public String validatephoneno()
+  {
+	  return phonevalidation.getText();
+  }
 
- 
+
+	 public String getPasswordMismatchError() 
+	 {
+		    return warningMessage.getText();
+		}
+ }
 
  	
 	
 	
-}

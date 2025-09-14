@@ -1,93 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T16:12:01 IST" name="Suite" finished-at="2025-09-09T16:12:52 IST" duration-ms="51024">
+  <suite started-at="2025-09-14T15:10:39 IST" name="Failed suite [Suite]" finished-at="2025-09-14T15:10:48 IST" duration-ms="8767">
     <groups>
     </groups>
-    <test started-at="2025-09-09T16:12:01 IST" name="Test" finished-at="2025-09-09T16:12:52 IST" duration-ms="51024">
-      <class name="com.OpenCart.TestCases.T1_AccountRegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:01 IST" name="setUp" finished-at="2025-09-09T16:12:10 IST" duration-ms="8882" status="PASS">
+    <test started-at="2025-09-14T15:10:39 IST" name="Test(failed)" finished-at="2025-09-14T15:10:48 IST" duration-ms="8767">
+      <class name="com.OpenCart.TestCases.T2_LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:39 IST" name="setUp" finished-at="2025-09-14T15:10:45 IST" duration-ms="5267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigatediffwayOfRegister()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:10 IST" name="navigatediffwayOfRegister" finished-at="2025-09-09T16:12:11 IST" duration-ms="791" status="PASS">
+        <test-method signature="TC_LF_009_validateBrowserbackbutton()[pri:3, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:45 IST" name="TC_LF_009_validateBrowserbackbutton" finished-at="2025-09-14T15:10:47 IST" duration-ms="1948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigatediffwayOfRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:11 IST" name="tearDown" finished-at="2025-09-09T16:12:11 IST" duration-ms="593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:11 IST" name="waitForTest" finished-at="2025-09-09T16:12:12 IST" duration-ms="1004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitForTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:12 IST" name="setUp" finished-at="2025-09-09T16:12:19 IST" duration-ms="6645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateMandatoryField()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:19 IST" name="validateMandatoryField" finished-at="2025-09-09T16:12:22 IST" duration-ms="3080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateMandatoryField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:22 IST" name="tearDown" finished-at="2025-09-09T16:12:22 IST" duration-ms="389" status="PASS">
+        </test-method> <!-- TC_LF_009_validateBrowserbackbutton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:47 IST" name="tearDown" finished-at="2025-09-14T15:10:47 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:22 IST" name="waitForTest" finished-at="2025-09-09T16:12:23 IST" duration-ms="1013" status="PASS">
+        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:47 IST" name="waitForTest" finished-at="2025-09-14T15:10:48 IST" duration-ms="1011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitForTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:23 IST" name="setUp" finished-at="2025-09-09T16:12:29 IST" duration-ms="5523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateNewsletterNoButton()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:29 IST" name="validateNewsletterNoButton" finished-at="2025-09-09T16:12:32 IST" duration-ms="2614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNewsletterNoButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:32 IST" name="tearDown" finished-at="2025-09-09T16:12:32 IST" duration-ms="446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:32 IST" name="waitForTest" finished-at="2025-09-09T16:12:33 IST" duration-ms="1016" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitForTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:33 IST" name="setUp" finished-at="2025-09-09T16:12:38 IST" duration-ms="4693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateNewsletterYesButton()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:38 IST" name="validateNewsletterYesButton" finished-at="2025-09-09T16:12:41 IST" duration-ms="3787" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNewsletterYesButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:41 IST" name="tearDown" finished-at="2025-09-09T16:12:42 IST" duration-ms="527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:42 IST" name="waitForTest" finished-at="2025-09-09T16:12:43 IST" duration-ms="1004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitForTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:43 IST" name="setUp" finished-at="2025-09-09T16:12:49 IST" duration-ms="6079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateWithInvalidEmail()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:49 IST" name="validateWithInvalidEmail" finished-at="2025-09-09T16:12:50 IST" duration-ms="1399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateWithInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:51 IST" name="tearDown" finished-at="2025-09-09T16:12:51 IST" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T1_AccountRegistrationPageTest@5e0e82ae]" started-at="2025-09-09T16:12:51 IST" name="waitForTest" finished-at="2025-09-09T16:12:52 IST" duration-ms="1001" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitForTest -->
-      </class> <!-- com.OpenCart.TestCases.T1_AccountRegistrationPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.OpenCart.TestCases.T2_LoginPageTest -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

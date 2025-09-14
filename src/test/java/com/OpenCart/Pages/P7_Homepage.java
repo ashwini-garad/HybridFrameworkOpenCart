@@ -15,9 +15,13 @@ public class P7_Homepage {
 		
 	}
 	//locater
-	@FindBy (xpath="//span[normalize-space()='My Account']") WebElement lnkMyaccount;
-	@FindBy (xpath="//a[normalize-space()='Register']") WebElement lnkRegister;
-	@FindBy (linkText="Login") WebElement lnkLogin;
+	@FindBy(xpath="//span[normalize-space()='My Account']") 
+	WebElement lnkMyaccount;
+	@FindBy(xpath="//a[normalize-space()='Register']") 
+	WebElement lnkRegister;
+
+	@FindBy(linkText = "Login")   // Login link added in step5
+	WebElement linkLogin;
 	@FindBy (xpath="//input[@placeholder='Search']") WebElement txtSearchbox;
 	@FindBy (xpath="//div[@id='search']//button[@type='button']") WebElement btnSearch;
 	
@@ -33,7 +37,7 @@ public class P7_Homepage {
 	}
 	public void clickLogin()
 	{
-		lnkLogin.click();
+		linkLogin.click();
 	}
 	public void clickSearch()
 	{

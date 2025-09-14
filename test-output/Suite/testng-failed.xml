@@ -5,25 +5,12 @@
     <classes>
       <class name="com.OpenCart.TestCases.T2_LoginPageTest">
         <methods>
-          <include name="varifyTitle"/>
-          <include name="setUp"/>
+          <include name="TC_LF_009_validateBrowserbackbutton"/>
           <include name="waitForTest"/>
-          <include name="validateLoginFunctionality"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.OpenCart.TestCases.T2_LoginPageTest -->
-      <class name="com.OpenCart.TestCases.T3_HomePageTest">
-        <methods>
-          <include name="pageSetup"/>
-          <include name="verifyProductCount"/>
-          <include name="verifyCartPageLaunch"/>
-          <include name="setUp"/>
-          <include name="waitForTest"/>
-          <include name="tearDown"/>
-          <include name="validateAddToCart"/>
-          <include name="verifyProductDetails"/>
-        </methods>
-      </class> <!-- com.OpenCart.TestCases.T3_HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
