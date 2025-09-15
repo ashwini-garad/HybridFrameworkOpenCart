@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.OpenCart.Base.BaseClass;
 import com.OpenCart.Pages.P2_LoginPage;
 import com.OpenCart.Pages.P4_MyAccountPage;
-import com.OpenCart.Pages.P7_Homepage;
+import com.OpenCart.Pages.P7_Mainpage;
 
 public class T6_LoginDDT extends BaseClass {
 	/*Data is valid  - login success - test pass  - logout
@@ -24,7 +24,7 @@ Data is invalid - login success - test fail  - logout
 		try
 		{
 		//HomePage
-		P7_Homepage hp=new P7_Homepage(driver);
+		P7_Mainpage hp=new P7_Mainpage(driver);
 		hp.clickMyAccount();
 		hp.clickLogin();
 		

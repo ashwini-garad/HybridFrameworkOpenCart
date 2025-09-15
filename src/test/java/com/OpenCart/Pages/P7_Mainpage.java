@@ -5,17 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class P7_Homepage {
+public class P7_Mainpage {
 	//constructor
 	private WebDriver driver;
-	public P7_Homepage(WebDriver driver)
+	public P7_Mainpage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements( driver,this);
 		
 	}
 	//locater
-	@FindBy(xpath="//span[normalize-space()='My Account']") 
+	@FindBy(xpath="//a[contains(.,'My Account') or contains(.,'My account') or contains(@title,'My Account')]") 
 	WebElement lnkMyaccount;
 	@FindBy(xpath="//a[normalize-space()='Register']") 
 	WebElement lnkRegister;
@@ -43,5 +43,11 @@ public class P7_Homepage {
 	{
 		btnSearch.click();
 	}
-
 }
+	  
+	   
+
+	
+
+	        // Open My Account drop-down
+	       

@@ -1,5 +1,10 @@
 package com.OpenCart.Base;
 
+import java.time.Duration;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -8,17 +13,9 @@ import com.OpenCart.Pages.P1_AccountRegistrationPage;
 import com.OpenCart.Pages.P2_LoginPage;
 import com.OpenCart.Pages.P3_HomePage;
 import com.OpenCart.Pages.P5_CartPage;
-import com.OpenCart.Pages.P7_Homepage;
+import com.OpenCart.Pages.P7_Mainpage;
+import com.OpenCart.Pages.P8_Logout;
 import com.OpenCart.Utilities.PropertiesUtil;
-
-import java.time.Duration;
-
-import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 
 public class BaseClass 
 {
@@ -29,7 +26,8 @@ public class BaseClass
 	public P3_HomePage hp;
 	public P5_CartPage cp;
 	public PropertiesUtil prop;
-	public P7_Homepage hp1;
+	public P7_Mainpage hp1;
+	public P8_Logout lo;
 	
 	
 	
@@ -42,6 +40,7 @@ public class BaseClass
 		
 		//driver=BrowserProvider.setDriver(bname);
 		driver=new ChromeDriver();
+		driver.get("https://tutorialsninja.com/demo/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(prop.getData("url"));
 		ar=new P1_AccountRegistrationPage(driver);
@@ -49,7 +48,8 @@ public class BaseClass
 		hp=new P3_HomePage(driver);
 		cp=new P5_CartPage(driver);
 		prop=new PropertiesUtil("Config");
-		hp1=new P7_Homepage(driver);
+		hp1=new P7_Mainpage(driver);
+		lo=new P8_Logout(driver);
 	}
 		
 	@AfterMethod

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-14T15:10:39 IST" name="Failed suite [Suite]" finished-at="2025-09-14T15:10:48 IST" duration-ms="8767">
+  <suite started-at="2025-09-15T21:44:04 IST" name="Default suite" finished-at="2025-09-15T21:44:15 IST" duration-ms="11354">
     <groups>
     </groups>
-    <test started-at="2025-09-14T15:10:39 IST" name="Test(failed)" finished-at="2025-09-14T15:10:48 IST" duration-ms="8767">
-      <class name="com.OpenCart.TestCases.T2_LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:39 IST" name="setUp" finished-at="2025-09-14T15:10:45 IST" duration-ms="5267" status="PASS">
+    <test started-at="2025-09-15T21:44:04 IST" name="Default test" finished-at="2025-09-15T21:44:15 IST" duration-ms="11354">
+      <class name="com.OpenCart.TestCases.T8_Logout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OpenCart.TestCases.T8_Logout@33d512c1]" started-at="2025-09-15T21:44:04 IST" name="setUp" finished-at="2025-09-15T21:44:11 IST" duration-ms="7331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_LF_009_validateBrowserbackbutton()[pri:3, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:45 IST" name="TC_LF_009_validateBrowserbackbutton" finished-at="2025-09-14T15:10:47 IST" duration-ms="1948" status="PASS">
+        <test-method signature="TC_LG_001_ValidateLogoutFromMyAccount()[pri:0, instance:com.OpenCart.TestCases.T8_Logout@33d512c1]" started-at="2025-09-15T21:44:11 IST" name="TC_LG_001_ValidateLogoutFromMyAccount" finished-at="2025-09-15T21:44:14 IST" duration-ms="2523" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_LF_009_validateBrowserbackbutton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:47 IST" name="tearDown" finished-at="2025-09-14T15:10:47 IST" duration-ms="420" status="PASS">
+        </test-method> <!-- TC_LG_001_ValidateLogoutFromMyAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.TestCases.T8_Logout@33d512c1]" started-at="2025-09-15T21:44:14 IST" name="tearDown" finished-at="2025-09-15T21:44:14 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T2_LoginPageTest@36fc695d]" started-at="2025-09-14T15:10:47 IST" name="waitForTest" finished-at="2025-09-14T15:10:48 IST" duration-ms="1011" status="PASS">
+        <test-method is-config="true" signature="waitForTest()[pri:0, instance:com.OpenCart.TestCases.T8_Logout@33d512c1]" started-at="2025-09-15T21:44:14 IST" name="waitForTest" finished-at="2025-09-15T21:44:15 IST" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitForTest -->
-      </class> <!-- com.OpenCart.TestCases.T2_LoginPageTest -->
-    </test> <!-- Test(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+      </class> <!-- com.OpenCart.TestCases.T8_Logout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

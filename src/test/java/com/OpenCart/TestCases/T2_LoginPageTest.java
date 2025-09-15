@@ -35,8 +35,10 @@ public class T2_LoginPageTest extends BaseClass {
 	  public void TC_LF_001_validateLoginFunctionality() 
 	  {
 		//  hp1.clickMyAccount();
-		//  hp1.clickRegister();
-		  driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+		//
+		 driver.get("https://tutorialsninja.com/demo/");
+		  hp1.clickMyAccount();
+		  hp1.clickLogin();
       lp.setEmail("garadash92@gmail.com");
       lp.setPassword("Abc@123");
       lp.ClickOnLoginButton();
